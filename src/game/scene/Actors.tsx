@@ -123,7 +123,7 @@ function Worker({ role }: { role: WorkerRole }) {
     }
   });
   const model = role === "cashier" ? "character-female-c" : role === "salesman" ? "character-male-d" : "character-worker";
-  return <Character model={model} pose={() => pose.current} tint={undefined} />;
+  return <Character model={model} pose={() => pose.current} />;
 }
 
 export function Workers() {

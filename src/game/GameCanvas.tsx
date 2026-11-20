@@ -17,7 +17,7 @@ function ReadySignal() {
   useEffect(() => {
     const el = document.querySelector<HTMLElement>("[data-game-root]");
     const id = requestAnimationFrame(() => {
-      if (el) el.dataset.sceneReady = "1";
+      if (el) el.dataset["sceneReady"] = "1";
       runtime.sceneReady = true;
     });
     return () => cancelAnimationFrame(id);

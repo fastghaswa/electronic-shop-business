@@ -31,7 +31,7 @@ function Shell({ title, icon, children, wide }: { title: string; icon?: ReactNod
   );
 }
 
-function Stat({ label, value, tone }: { label: string; value: string; tone?: "good" | "bad" }) {
+function Stat({ label, value, tone }: { label: string; value: string; tone?: "good" | "bad" | undefined }) {
   return (
     <div className="rounded-lg bg-secondary/70 px-3 py-2">
       <div className="text-[10px] uppercase tracking-wider text-muted-foreground">{label}</div>
